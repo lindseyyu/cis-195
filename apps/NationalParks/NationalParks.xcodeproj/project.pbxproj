@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C971FB84239036B7606BCCF /* Pods_NationalParks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27A68613AD9E6F202B08E12 /* Pods_NationalParks.framework */; };
+		BA955E5125620E540073CCE8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BA955E5025620E540073CCE8 /* Kingfisher */; };
+		BA955E5625621B180073CCE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA955E5525621B170073CCE8 /* GoogleService-Info.plist */; };
+		BAB67126255E31C600D0265C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB67125255E31C600D0265C /* AppDelegate.swift */; };
+		BAB67128255E31C700D0265C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB67127255E31C700D0265C /* SceneDelegate.swift */; };
+		BAB6712D255E31C700D0265C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB6712B255E31C700D0265C /* Main.storyboard */; };
+		BAB6712F255E31C800D0265C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB6712E255E31C800D0265C /* Assets.xcassets */; };
+		BAB67132255E31C800D0265C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB67130255E31C800D0265C /* LaunchScreen.storyboard */; };
+		BAB6713D255E31C800D0265C /* NationalParksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6713C255E31C800D0265C /* NationalParksTests.swift */; };
+		BAB67148255E31C800D0265C /* NationalParksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB67147255E31C800D0265C /* NationalParksUITests.swift */; };
+		BAB6715C255E386500D0265C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6715B255E386500D0265C /* TableViewController.swift */; };
+		BAB67161255E38BD00D0265C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB67160255E38BD00D0265C /* ViewController.swift */; };
+		BAB67166255E43B200D0265C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB67165255E43B200D0265C /* Data.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAB67139255E31C800D0265C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAB6711A255E31C600D0265C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAB67121255E31C600D0265C;
+			remoteInfo = NationalParks;
+		};
+		BAB67144255E31C800D0265C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAB6711A255E31C600D0265C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAB67121255E31C600D0265C;
+			remoteInfo = NationalParks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0095C85C859FB0FC9CDC5DC7 /* Pods-NationalParks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NationalParks.release.xcconfig"; path = "Target Support Files/Pods-NationalParks/Pods-NationalParks.release.xcconfig"; sourceTree = "<group>"; };
+		BA955E5525621B170073CCE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAB67122255E31C600D0265C /* NationalParks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationalParks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB67125255E31C600D0265C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAB67127255E31C700D0265C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BAB6712C255E31C700D0265C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAB6712E255E31C800D0265C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAB67131255E31C800D0265C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAB67133255E31C800D0265C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB67138255E31C800D0265C /* NationalParksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NationalParksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB6713C255E31C800D0265C /* NationalParksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksTests.swift; sourceTree = "<group>"; };
+		BAB6713E255E31C800D0265C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB67143255E31C800D0265C /* NationalParksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NationalParksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB67147255E31C800D0265C /* NationalParksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksUITests.swift; sourceTree = "<group>"; };
+		BAB67149255E31C800D0265C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB6715B255E386500D0265C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		BAB67160255E38BD00D0265C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAB67165255E43B200D0265C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F27A68613AD9E6F202B08E12 /* Pods_NationalParks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NationalParks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27F450886FB1288D5E1622F /* Pods-NationalParks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NationalParks.debug.xcconfig"; path = "Target Support Files/Pods-NationalParks/Pods-NationalParks.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAB6711F255E31C600D0265C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA955E5125620E540073CCE8 /* Kingfisher in Frameworks */,
+				9C971FB84239036B7606BCCF /* Pods_NationalParks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB67135255E31C800D0265C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB67140255E31C800D0265C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51DA38391F0FE216D0F65B08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F27A68613AD9E6F202B08E12 /* Pods_NationalParks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAB67119255E31C600D0265C = {
+			isa = PBXGroup;
+			children = (
+				BAB67124255E31C600D0265C /* NationalParks */,
+				BAB6713B255E31C800D0265C /* NationalParksTests */,
+				BAB67146255E31C800D0265C /* NationalParksUITests */,
+				BAB67123255E31C600D0265C /* Products */,
+				DEABA1128DB1A92B6DA6989E /* Pods */,
+				51DA38391F0FE216D0F65B08 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BAB67123255E31C600D0265C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAB67122255E31C600D0265C /* NationalParks.app */,
+				BAB67138255E31C800D0265C /* NationalParksTests.xctest */,
+				BAB67143255E31C800D0265C /* NationalParksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAB67124255E31C600D0265C /* NationalParks */ = {
+			isa = PBXGroup;
+			children = (
+				BA955E5525621B170073CCE8 /* GoogleService-Info.plist */,
+				BAB67125255E31C600D0265C /* AppDelegate.swift */,
+				BAB67127255E31C700D0265C /* SceneDelegate.swift */,
+				BAB6715B255E386500D0265C /* TableViewController.swift */,
+				BAB67165255E43B200D0265C /* Data.swift */,
+				BAB67160255E38BD00D0265C /* ViewController.swift */,
+				BAB6712B255E31C700D0265C /* Main.storyboard */,
+				BAB6712E255E31C800D0265C /* Assets.xcassets */,
+				BAB67130255E31C800D0265C /* LaunchScreen.storyboard */,
+				BAB67133255E31C800D0265C /* Info.plist */,
+			);
+			path = NationalParks;
+			sourceTree = "<group>";
+		};
+		BAB6713B255E31C800D0265C /* NationalParksTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6713C255E31C800D0265C /* NationalParksTests.swift */,
+				BAB6713E255E31C800D0265C /* Info.plist */,
+			);
+			path = NationalParksTests;
+			sourceTree = "<group>";
+		};
+		BAB67146255E31C800D0265C /* NationalParksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BAB67147255E31C800D0265C /* NationalParksUITests.swift */,
+				BAB67149255E31C800D0265C /* Info.plist */,
+			);
+			path = NationalParksUITests;
+			sourceTree = "<group>";
+		};
+		DEABA1128DB1A92B6DA6989E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F27F450886FB1288D5E1622F /* Pods-NationalParks.debug.xcconfig */,
+				0095C85C859FB0FC9CDC5DC7 /* Pods-NationalParks.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAB67121255E31C600D0265C /* NationalParks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB6714C255E31C800D0265C /* Build configuration list for PBXNativeTarget "NationalParks" */;
+			buildPhases = (
+				EA9D196A6305F783688D3CB6 /* [CP] Check Pods Manifest.lock */,
+				BAB6711E255E31C600D0265C /* Sources */,
+				BAB6711F255E31C600D0265C /* Frameworks */,
+				BAB67120255E31C600D0265C /* Resources */,
+				957129C5E8B796E91772BE0C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NationalParks;
+			packageProductDependencies = (
+				BA955E5025620E540073CCE8 /* Kingfisher */,
+			);
+			productName = NationalParks;
+			productReference = BAB67122255E31C600D0265C /* NationalParks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAB67137255E31C800D0265C /* NationalParksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB6714F255E31C800D0265C /* Build configuration list for PBXNativeTarget "NationalParksTests" */;
+			buildPhases = (
+				BAB67134255E31C800D0265C /* Sources */,
+				BAB67135255E31C800D0265C /* Frameworks */,
+				BAB67136255E31C800D0265C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAB6713A255E31C800D0265C /* PBXTargetDependency */,
+			);
+			name = NationalParksTests;
+			productName = NationalParksTests;
+			productReference = BAB67138255E31C800D0265C /* NationalParksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAB67142255E31C800D0265C /* NationalParksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB67152255E31C800D0265C /* Build configuration list for PBXNativeTarget "NationalParksUITests" */;
+			buildPhases = (
+				BAB6713F255E31C800D0265C /* Sources */,
+				BAB67140255E31C800D0265C /* Frameworks */,
+				BAB67141255E31C800D0265C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAB67145255E31C800D0265C /* PBXTargetDependency */,
+			);
+			name = NationalParksUITests;
+			productName = NationalParksUITests;
+			productReference = BAB67143255E31C800D0265C /* NationalParksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAB6711A255E31C600D0265C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					BAB67121255E31C600D0265C = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					BAB67137255E31C800D0265C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = BAB67121255E31C600D0265C;
+					};
+					BAB67142255E31C800D0265C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = BAB67121255E31C600D0265C;
+					};
+				};
+			};
+			buildConfigurationList = BAB6711D255E31C600D0265C /* Build configuration list for PBXProject "NationalParks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAB67119255E31C600D0265C;
+			packageReferences = (
+				BA955E4F25620E540073CCE8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = BAB67123255E31C600D0265C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAB67121255E31C600D0265C /* NationalParks */,
+				BAB67137255E31C800D0265C /* NationalParksTests */,
+				BAB67142255E31C800D0265C /* NationalParksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAB67120255E31C600D0265C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB67132255E31C800D0265C /* LaunchScreen.storyboard in Resources */,
+				BA955E5625621B180073CCE8 /* GoogleService-Info.plist in Resources */,
+				BAB6712F255E31C800D0265C /* Assets.xcassets in Resources */,
+				BAB6712D255E31C700D0265C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB67136255E31C800D0265C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB67141255E31C800D0265C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		957129C5E8B796E91772BE0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NationalParks/Pods-NationalParks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NationalParks/Pods-NationalParks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NationalParks/Pods-NationalParks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA9D196A6305F783688D3CB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NationalParks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAB6711E255E31C600D0265C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB67126255E31C600D0265C /* AppDelegate.swift in Sources */,
+				BAB67166255E43B200D0265C /* Data.swift in Sources */,
+				BAB6715C255E386500D0265C /* TableViewController.swift in Sources */,
+				BAB67161255E38BD00D0265C /* ViewController.swift in Sources */,
+				BAB67128255E31C700D0265C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB67134255E31C800D0265C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB6713D255E31C800D0265C /* NationalParksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB6713F255E31C800D0265C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB67148255E31C800D0265C /* NationalParksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAB6713A255E31C800D0265C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAB67121255E31C600D0265C /* NationalParks */;
+			targetProxy = BAB67139255E31C800D0265C /* PBXContainerItemProxy */;
+		};
+		BAB67145255E31C800D0265C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAB67121255E31C600D0265C /* NationalParks */;
+			targetProxy = BAB67144255E31C800D0265C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAB6712B255E31C700D0265C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAB6712C255E31C700D0265C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAB67130255E31C800D0265C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAB67131255E31C800D0265C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAB6714A255E31C800D0265C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAB6714B255E31C800D0265C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAB6714D255E31C800D0265C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27F450886FB1288D5E1622F /* Pods-NationalParks.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NationalParks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yu-cis195.NationalParks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAB6714E255E31C800D0265C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0095C85C859FB0FC9CDC5DC7 /* Pods-NationalParks.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NationalParks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yu-cis195.NationalParks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BAB67150255E31C800D0265C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NationalParksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yu-cis195.NationalParksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NationalParks.app/NationalParks";
+			};
+			name = Debug;
+		};
+		BAB67151255E31C800D0265C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NationalParksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yu-cis195.NationalParksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NationalParks.app/NationalParks";
+			};
+			name = Release;
+		};
+		BAB67153255E31C800D0265C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NationalParksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yu-cis195.NationalParksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NationalParks;
+			};
+			name = Debug;
+		};
+		BAB67154255E31C800D0265C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NationalParksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yu-cis195.NationalParksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NationalParks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAB6711D255E31C600D0265C /* Build configuration list for PBXProject "NationalParks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB6714A255E31C800D0265C /* Debug */,
+				BAB6714B255E31C800D0265C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAB6714C255E31C800D0265C /* Build configuration list for PBXNativeTarget "NationalParks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB6714D255E31C800D0265C /* Debug */,
+				BAB6714E255E31C800D0265C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAB6714F255E31C800D0265C /* Build configuration list for PBXNativeTarget "NationalParksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB67150255E31C800D0265C /* Debug */,
+				BAB67151255E31C800D0265C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAB67152255E31C800D0265C /* Build configuration list for PBXNativeTarget "NationalParksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB67153255E31C800D0265C /* Debug */,
+				BAB67154255E31C800D0265C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA955E4F25620E540073CCE8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA955E5025620E540073CCE8 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA955E4F25620E540073CCE8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BAB6711A255E31C600D0265C /* Project object */;
+}
